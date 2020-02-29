@@ -6,7 +6,11 @@
 package ayd1.p1_5;
 
 import static ayd1.p1_5.discriminante.darDiscri;
+<<<<<<< HEAD
+import static ayd1.p1_5.numero_absoluto.numero_absoluto;
+=======
 import static ayd1.p1_5.potencia_cubo.Potencia;
+>>>>>>> r/1.3.0-201325657-201612113
 import java.io.IOException;
 
 /**
@@ -22,7 +26,12 @@ public class AyD1P1_5 {
         numero_primo pr = new numero_primo();
         pr.esPrimo(11);
         darDiscri();
+<<<<<<< HEAD
+        numero_absoluto();
+        
+=======
         Potencia();
+>>>>>>> r/1.3.0-201325657-201612113
         
         // TODO code application logic here
     }
