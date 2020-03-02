@@ -37,8 +37,15 @@ public class Multiplicacion_Division {
             numero1 = sc.nextDouble();
             System.out.print("Ingrese numero ");
             numero2 = sc.nextDouble();
-            resultado=numero1/numero2;
+            
+            if(numero2==0){
+                System.out.println("No se puede dividir entre 0, el resultado es indefinido");
+            }else {
+             resultado=numero1/numero2;
+            
              System.out.println("El valor de la division de "+numero1 + " entre " + numero2+" es "+resultado);
+            }
+            
             }else {
              System.out.println("opcion no valida");
             }
