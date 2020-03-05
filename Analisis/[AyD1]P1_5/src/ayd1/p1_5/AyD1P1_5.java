@@ -6,6 +6,7 @@ import static ayd1.p1_5.numero_absoluto.numero_absoluto;
 import static ayd1.p1_5.potencia_cubo.Potencia;
 import java.io.IOException;
 import java.util.Scanner;
+import javax.swing.JOptionPane;
 
 /**
  * @author valde
@@ -16,13 +17,13 @@ public class AyD1P1_5 {
      * @param args the command line arguments
      */
     public static void main(String[] args) throws IOException {
-
+        
         Scanner teclado = new Scanner(System.in);
         String menu;
         menu = teclado.nextLine();
-        
+       
         while(true){
-            System.out.print("Menu"+"\n"+"1. Numero Primo"+"\n"+"2. Numero Discriminante"+"\n"+"3. Potencia"+"\n"+"4. Numero Absoluto"+"\n"+"5. Multiplicacion/Division"+"\n6. Exit \n");
+            System.out.print("Menu"+"\n"+"1. Numero Primo"+"\n"+"2. Numero Discriminante"+"\n"+"3. Potencia"+"\n"+"4. Numero Absoluto"+"\n"+"5. Multiplicacion/Division"+"\n6. Par/Impar"+"\n7. Exit \n");
             menu = teclado.nextLine();
             if(menu.equals("1")){
                 System.out.print("Ingrese un numero:");
@@ -38,6 +39,11 @@ public class AyD1P1_5 {
             }else if(menu.equals("5")){
                Multiplicacion_Division();
             }else if(menu.equals("6")){
+                System.out.print("Ingrese un numero:");
+                menu = teclado.nextLine();
+                parImpar pi = new parImpar();
+                pi.parImpar(Integer.parseInt(menu));
+            }else if(menu.equals("7")){
                 System.exit(0);
             }else{
                 System.out.println("Opcion invalida");
