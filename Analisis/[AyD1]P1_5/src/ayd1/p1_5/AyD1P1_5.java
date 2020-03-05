@@ -1,5 +1,6 @@
 package ayd1.p1_5;
 
+import static ayd1.p1_5.Multiplicacion_Division.Multiplicacion_Division;
 import static ayd1.p1_5.discriminante.darDiscri;
 import static ayd1.p1_5.numero_absoluto.numero_absoluto;
 import static ayd1.p1_5.potencia_cubo.Potencia;
@@ -21,7 +22,7 @@ public class AyD1P1_5 {
         menu = teclado.nextLine();
         
         while(true){
-            System.out.print("Menu"+"\n"+"1. Numero Primo"+"\n"+"2. Numero Discriminante"+"\n"+"3. Potencia"+"\n"+"4. Numero Absoluto"+"\n5. Exit \n");
+            System.out.print("Menu"+"\n"+"1. Numero Primo"+"\n"+"2. Numero Discriminante"+"\n"+"3. Potencia"+"\n"+"4. Numero Absoluto"+"\n"+"5. Multiplicacion/Division"+"\n6. Exit \n");
             menu = teclado.nextLine();
             if(menu.equals("1")){
                 System.out.print("Ingrese un numero:");
@@ -35,6 +36,8 @@ public class AyD1P1_5 {
             }else if(menu.equals("4")){
                 numero_absoluto();
             }else if(menu.equals("5")){
+               Multiplicacion_Division();
+            }else if(menu.equals("6")){
                 System.exit(0);
             }else{
                 System.out.println("Opcion invalida");
