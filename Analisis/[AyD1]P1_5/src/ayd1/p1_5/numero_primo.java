@@ -26,7 +26,7 @@ public class numero_primo {
         }
         if (n % 2 == 0 || n % 3 == 0) {
             msg mg = new msg();
-                 mg.mostrarResultado("No es Primo");
+            mg.mostrarResultado("No es Primo");
             return false;
         }
         long sqrtN = (long) Math.sqrt(n) + 1;
