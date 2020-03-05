@@ -17,7 +17,7 @@ public class AyD1P1_5 {
      * @param args the command line arguments
      */
     public static void main(String[] args) throws IOException {
-        
+        JOptionPane.showMessageDialog(null, "Analisis Grupo 5 Practica 1 Bienvenido");
         Scanner teclado = new Scanner(System.in);
         String menu;
         menu = teclado.nextLine();
