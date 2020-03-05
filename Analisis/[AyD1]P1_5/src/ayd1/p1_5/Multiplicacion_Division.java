@@ -31,7 +31,8 @@ public class Multiplicacion_Division {
             System.out.print("Ingrese numero ");
              numero2 = sc.nextDouble();
              resultado=numero1*numero2;
-             System.out.print("El valor de la multiplicacion de "+numero1 + " por " + numero2+" es "+resultado);
+             msg mg = new msg();
+             mg.mostrarResultado("El valor de la multiplicacion de "+numero1 + " por " + numero2+" es "+resultado);
             }else if(opcion==2){
             System.out.print("Ingrese numero ");
             numero1 = sc.nextDouble();
@@ -42,10 +43,13 @@ public class Multiplicacion_Division {
              System.out.print( "No se puede dividir entre 0, el resultado es indefinido");
             }else {
              resultado=numero1/numero2;
-             System.out.print( "El valor de la division de "+numero1 + " entre " + numero2+" es "+resultado);
+             msg mg = new msg();
+             mg.mostrarResultado("El valor de la division de "+numero1 + " entre " + numero2+" es "+resultado);
+      
             }
             
             }else {
+            
               System.out.print("opcion no valida");
             }
            
