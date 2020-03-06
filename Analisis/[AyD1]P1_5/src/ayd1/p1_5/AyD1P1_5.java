@@ -5,8 +5,10 @@ import static ayd1.p1_5.discriminante.darDiscri;
 import static ayd1.p1_5.numero_absoluto.numero_absoluto;
 import static ayd1.p1_5.potencia_cubo.Potencia;
 import java.io.IOException;
+import java.math.RoundingMode;
 import java.util.Scanner;
 import javax.swing.JOptionPane;
+import java.text.DecimalFormat;
 
 /**
  * @author valde
@@ -23,7 +25,7 @@ public class AyD1P1_5 {
         menu = teclado.nextLine();
        
         while(true){
-            System.out.print("Menu"+"\n"+"1. Numero Primo"+"\n"+"2. Numero Discriminante"+"\n"+"3. Potencia"+"\n"+"4. Numero Absoluto"+"\n"+"5. Multiplicacion/Division"+"\n6. Par/Impar"+"\n7. Exit \n");
+            System.out.print("Menu"+"\n"+"1. Numero Primo"+"\n"+"2. Numero Discriminante"+"\n"+"3. Potencia"+"\n"+"4. Numero Absoluto"+"\n"+"5. Multiplicacion/Division"+"\n6. Par/Impar"+"\n7. Raiz Cubica\n8. Exit \n");
             menu = teclado.nextLine();
             if(menu.equals("1")){
                 System.out.print("Ingrese un numero:");
@@ -44,6 +46,14 @@ public class AyD1P1_5 {
                 parImpar pi = new parImpar();
                 pi.parImpar(Integer.parseInt(menu));
             }else if(menu.equals("7")){
+                System.out.println("Ingrese un numero:");
+                menu = teclado.nextLine();
+                RaizCubica r = new RaizCubica();
+                double res = r.getResult(Double.parseDouble(menu));
+                DecimalFormat df = new DecimalFormat("#.###");
+                df.setRoundingMode(RoundingMode.CEILING);
+                msg.mostrarResultado(df.format(res));
+            }else if(menu.equals("8")){
                 System.exit(0);
             }else{
                 System.out.println("Opcion invalida");
