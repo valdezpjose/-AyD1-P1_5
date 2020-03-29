@@ -34,7 +34,8 @@ public class discriminante {
             int discriminant = (int)Math.pow(b,2) - (4*a*c);  
             if (discriminant > 0){ 
                 System.out.println(Console_Colors.GREEN_BRIGHT + "Discriminante es" +Console_Colors.RESET + Console_Colors.GREEN_BRIGHT +discriminant +Console_Colors.RESET);
-                System.out.println("Dos Soluciones"); 
+                System.out.println("Dos Soluciones");
+                System.out.println("------------------------------------");
                 System.out.println("////////////////////////////////////////////////////////////// :\n");
             } 
             else if (discriminant == 0){ 
