@@ -38,6 +38,7 @@ public class discriminante {
                 System.out.println("Discriminante es " + discriminant); 
                 System.out.println("Una Solución"); 
                 System.out.println("////////////////////////////////////////////////////////////// :\n");
+                //Calificacion 201612113 lol 
             } 
             else { 
                 System.out.println("Discriminante es "+ discriminant); 
