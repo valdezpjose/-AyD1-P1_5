@@ -30,7 +30,7 @@ public class discriminante {
             System.out.println( Console_Colors.BLUE_BOLD + "Ingrese c:\n" +Console_Colors.RESET );
             int c=Integer.parseInt(ob.readLine()); 
             System.out.println("////////////////////////RESULTADO////////////////////////////////////// :\n");
-
+            //Modificacion 201612113
             int discriminant = (int)Math.pow(b,2) - (4*a*c);  
             if (discriminant > 0){ 
                 System.out.println(Console_Colors.GREEN_BRIGHT + "Discriminante es" +Console_Colors.RESET + Console_Colors.GREEN_BRIGHT +discriminant +Console_Colors.RESET);
@@ -41,6 +41,7 @@ public class discriminante {
                 System.out.println(Console_Colors.GREEN_BRIGHT + "Discriminante es" +Console_Colors.RESET + Console_Colors.GREEN_BRIGHT +discriminant +Console_Colors.RESET);
                 System.out.println(Console_Colors.RED + "Una Solución" +Console_Colors.RESET);
                 System.out.println("////////////////////////////////////////////////////////////// :\n");
+                //Calificacion 201612113 lol 
             } 
             else { 
                 System.out.println(Console_Colors.GREEN_BOLD + "Discriminante es" +Console_Colors.RESET + Console_Colors.GREEN_BOLD + discriminant+Console_Colors.RESET );
