@@ -27,7 +27,7 @@ public class discriminante {
             System.out.println("Ingrese c:\n");
             int c=Integer.parseInt(ob.readLine()); 
             System.out.println("////////////////////////RESULTADO////////////////////////////////////// :\n");
-
+            //Modificacion 201612113
             int discriminant = (int)Math.pow(b,2) - (4*a*c);  
             if (discriminant > 0){ 
                 System.out.println("Discriminante es " + discriminant);
