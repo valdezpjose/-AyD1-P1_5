@@ -41,6 +41,7 @@ public class discriminante {
             else if (discriminant == 0){ 
                 System.out.println(Console_Colors.GREEN_BRIGHT + "Discriminante es" +Console_Colors.RESET + Console_Colors.GREEN_BRIGHT +discriminant +Console_Colors.RESET);
                 System.out.println(Console_Colors.RED + "Una Solución" +Console_Colors.RESET);
+                System.out.println("--s-s-s-s-s-s-s");
                 System.out.println("////////////////////////////////////////////////////////////// :\n");
             } 
             else { 
