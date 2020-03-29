@@ -24,6 +24,7 @@ public class numero_absoluto {
             System.out.print("Por favor ingresar el numero al que le desea conocer al absoluto: ");
             numero = sc.nextDouble();
             absoluto = Math.abs(numero);
-            System.out.println("El valor absoluto del numero es: " + absoluto);
+            msg mg = new msg();
+            mg.mostrarResultado("El valor absoluto del numero es: " + absoluto);
         }
 }

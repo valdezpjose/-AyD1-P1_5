@@ -22,7 +22,9 @@ public class potencia_cubo {
         double num_exp = Double.parseDouble(ob.readLine()); 
         
         double resultado = Math.pow(num_base, num_exp);
-        System.out.println("[Resultado] " + num_base + "^" + num_exp  + " = " + resultado);
+        msg mg = new msg();
+        mg.mostrarResultado("[Resultado] " + num_base + "^" + num_exp  + " = " + resultado);
+  
     }
     
 }
