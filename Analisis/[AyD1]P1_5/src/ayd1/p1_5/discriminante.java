@@ -40,6 +40,7 @@ public class discriminante {
                 System.out.println("////////////////////////////////////////////////////////////// :\n");
             } 
             else { 
+                
                 System.out.println("Discriminante es "+ discriminant); 
                 System.out.println("No hay solución real"); 
                 System.out.println("////////////////////////////////////////////////////////////// :\n");
